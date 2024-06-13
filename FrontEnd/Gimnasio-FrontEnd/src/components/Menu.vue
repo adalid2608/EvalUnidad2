@@ -285,18 +285,22 @@
      </div>
   </aside>
   
+  
   <div class="p-4 ml-64 h-[100vh] w-full">
       <router-view/>
+      <Footer></Footer>
   </div>
 
 </template>
 <script>
+   import Footer from './Footer.vue';
    import Home from '../components/Home.vue'
 
    export default {
       components:
          {
-            Home
+            Home,
+            Footer
          }
    }
 </script>
